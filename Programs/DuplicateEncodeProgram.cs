@@ -5,6 +5,12 @@ namespace CodeWars.Programs
 {
     public static class DuplicateEncodeProgram
     {
+        /// <summary>
+        /// replaces unique characters in a word with '('
+        /// replaces repeating characters in a word with ')'
+        /// </summary>
+        /// <param name="word"></param>
+        /// <returns></returns>
         public static string DuplicateEncode(string word)
         {
             word = word.ToLower();
