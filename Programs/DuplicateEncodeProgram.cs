@@ -35,7 +35,7 @@ namespace CodeWars.Programs
                     }
                 }
 
-                if(count == 1)
+                if(count == 1 && sb[i] != ')')
                 {
                     sb[i] = '(';
                 }
