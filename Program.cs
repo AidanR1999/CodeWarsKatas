@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using CodeWars.Programs;
+using System.Text.RegularExpressions;
 
 namespace CodeWars
 {
@@ -10,7 +11,9 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(DuplicateEncodeProgram.DuplicateEncode("(( @"));
+            Console.WriteLine(Rot13("C# Rules"));
         }
+
+        
     }
 }
