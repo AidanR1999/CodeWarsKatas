@@ -12,25 +12,5 @@ namespace CodeWars
         {
             Console.WriteLine(DuplicateEncodeProgram.DuplicateEncode("(( @"));
         }
-
-        public static int getLoopSize(LoopDetector.Node startNode){
-            HashSet<LoopDetector.Node> allNodes =  new HashSet<LoopDetector.Node>();
-            allNodes.Add(startNode);
-
-            startNode = startNode.next;
-            var temp = 0;
-            var count = 0;
-            while(true)
-            {
-                if(allNodes.Contains(startNode))
-                {
-                    temp = allNodes.FirstOrDefault(x => x.Equals(startNode))
-                    return allNodes.Count - temp;
-                }
-
-                allNodes.Add(startNode);
-                startNode = startNode.next;
-            }
-        }
     }
 }
